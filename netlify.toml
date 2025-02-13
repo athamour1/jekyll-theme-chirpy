@@ -2,10 +2,10 @@
   command = "bash tools/init.sh --no-gh && JEKYLL_ENV=production bundle exec jekyll build"
   publish = "_site"
 
-[build.environment]
-  RUBY_VERSION = "3.1"
-  BUNDLER_VERSION = "2.4.22"
-  JEKYLL_ENV = "production"
+# [build.environment]
+#   RUBY_VERSION = "3.1"
+#   BUNDLER_VERSION = "2.4.22"
+#   JEKYLL_ENV = "production"
 
 [[redirects]]
   from = "/*"
