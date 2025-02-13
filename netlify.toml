@@ -1,0 +1,18 @@
+[build]
+  command = "JEKYLL_ENV=production bundle exec jekyll build"
+  publish = "_site"
+
+[build.environment]
+  RUBY_VERSION = "3.1"
+  BUNDLER_VERSION = "2.4.22"
+  JEKYLL_ENV = "production"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
