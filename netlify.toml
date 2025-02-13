@@ -1,5 +1,5 @@
 [build]
-  command = "git config --global user.email 'netlify@build.com' && git config --global user.name 'Netlify Build' && bash tools/init.sh --no-gh && JEKYLL_ENV=production bundle exec jekyll build"
+  command = "bash tools/init.sh --no-gh && JEKYLL_ENV=production bundle exec jekyll build"
   publish = "_site"
 
 [build.environment]
